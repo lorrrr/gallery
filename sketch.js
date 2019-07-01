@@ -31,9 +31,10 @@ function gotResults(err, result) {
     // console.log(result);
     segmentation = result;
 
-    background(0);
+  
+   
+    video.mask(segmentation.maskPerson)
     image(video, 0, 0, width, height)
-    image(segmentation.maskBackground, 0, 0, width, height)
 
     bodypix.segment(gotResults, options)
 

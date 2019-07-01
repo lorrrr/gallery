@@ -9,7 +9,7 @@ const options = {
 }
 
 function setup() {
-    createCanvas(windowWidth,windowWidth);
+    createCanvas(500,500);
 
     // load up your video
     video = createCapture(VIDEO);

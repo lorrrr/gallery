@@ -4,7 +4,7 @@ let segmentation;
 let img;
 
 const options = {
-    outputStride: 8, // 8, 16, or 32, default is 16
+    outputStride:16, // 8, 16, or 32, default is 16
     segmentationThreshold: 0.7 // 0 - 1, defaults to 0.5 
 }
 

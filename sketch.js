@@ -16,6 +16,7 @@ function setup() {
     video.size(width,width);
      video.hide(); // Hide the video element, and just show the canvas
     bodypix = ml5.bodyPix(video, modelReady)
+    
 }
 
 function modelReady() {
@@ -34,8 +35,9 @@ function gotResults(err, result) {
   
    
     video.mask(segmentation.maskPerson)
+    clear();
     image(video, 0, 0, width, height)
 
     bodypix.segment(gotResults, options)
-
+    
 }

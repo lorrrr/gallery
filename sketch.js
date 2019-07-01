@@ -9,12 +9,12 @@ const options = {
 }
 
 function setup() {
-    createCanvas(320, 240);
+    createCanvas(windowWidth,windowHeight);
 
     // load up your video
     video = createCapture(VIDEO);
-    video.size(width, height);
-    // video.hide(); // Hide the video element, and just show the canvas
+    video.size(windowWidth,windowHeight);
+     video.hide(); // Hide the video element, and just show the canvas
     bodypix = ml5.bodyPix(video, modelReady)
 }
 

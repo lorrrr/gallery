@@ -67,8 +67,10 @@ function initialize()
 	////////////////////////////////////////////////////////////	
 
 	// create atToolkitContext
+	
 	arToolkitContext = new THREEx.ArToolkitContext({
 		cameraParametersUrl: 'camera_para.dat',
+		video: { facingMode: { exact: "user" }},
 		detectionMode: 'mono'
 	});
 	
